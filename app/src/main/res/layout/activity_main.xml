@@ -8,29 +8,36 @@
         tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
-    <TextView
-            android:id="@+id/app_main_title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Github Users"
-            android:layout_marginTop="60dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="@id/github_user_input"/>
-
-    <EditText
-            android:id="@+id/github_user_input"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
-            android:drawableLeft="@drawable/ic_search"
-            android:hint="Search Github Users"/>
+            android:layout_height="match_parent"
+            android:orientation="vertical" app:layout_constraintEnd_toEndOf="parent"
+            tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+                style="@style/CustomTitleText"
+                android:id="@+id/app_main_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Github Users"
+                android:layout_marginTop="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/github_user_input"
+                android:paddingLeft="20dp"
+        />
+
+        <EditText
+                android:id="@+id/github_user_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:drawableLeft="@drawable/ic_search"
+                android:layout_marginTop="5dp"
+                android:hint="Search Github Users"
+                android:background="@drawable/button_user_input"/>
     </LinearLayout>
+
 
 </android.support.constraint.ConstraintLayout>
