@@ -6,4 +6,5 @@
     <color name="colorBlue">#1C5A7E</color>
     <color name="colorBlack">#000000</color>
     <color name="colorGray">#EAEAEB</color>
+    <color name="colorItemText">#777777</color>
 </resources>

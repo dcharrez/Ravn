@@ -37,6 +37,15 @@
                 android:layout_marginTop="5dp"
                 android:hint="Search Github Users"
                 android:background="@drawable/button_user_input"/>
+
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/github_users_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"/>
+
+
     </LinearLayout>
 
 
