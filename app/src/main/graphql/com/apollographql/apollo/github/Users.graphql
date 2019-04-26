@@ -1,0 +1,14 @@
+query UsersQuery($queryText: String!) {
+  search(query: $queryText, type: USER, first: 25) {
+    edges {
+      node {
+        ... on User {
+          name
+          login
+          location
+          avatarUrl
+        }
+      }
+    }
+  }
+}

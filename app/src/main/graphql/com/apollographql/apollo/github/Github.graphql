@@ -1,0 +1,17 @@
+query FindQuery($user_name:String!){
+  user(login: $user_name) {
+    name
+    repositories(first:25) {
+      edges {
+        node {
+          name
+          url
+          description
+          pullRequests{
+            totalCount
+          }
+        }
+      }
+    }
+  }
+}
