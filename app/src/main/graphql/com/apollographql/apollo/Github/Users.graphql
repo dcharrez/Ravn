@@ -1,5 +1,5 @@
 query UsersQuery($queryText: String!) {
-  search(query: $queryText, type: USER, first: 25) {
+  search(query: $queryText, type: USER, first: 10) {
     edges {
       node {
         ... on User {

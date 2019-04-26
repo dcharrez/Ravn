@@ -1,7 +1,7 @@
 query FindQuery($user_name:String!){
   user(login: $user_name) {
     name
-    repositories(first:25) {
+    repositories(last:10) {
       edges {
         node {
           name
