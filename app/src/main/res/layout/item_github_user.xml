@@ -32,7 +32,7 @@
                     style="@style/ItemUserNameLocation"
                     android:id="@+id/github_user_name"
                     android:layout_width="wrap_content"
-                    android:layout_height="20pt"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     android:maxLines="1"/>
 
@@ -40,9 +40,10 @@
                     style="@style/ItemUserNameLocation"
                     android:id="@+id/github_user_location"
                     android:layout_width="wrap_content"
-                    android:layout_height="20pt"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
-                    android:maxLines="1"/>
+                    android:maxLines="1"
+                    android:textSize="20sp"/>
 
         </LinearLayout>
 
@@ -50,7 +51,9 @@
                 style="@style/ItemUserLogin"
                 android:id="@+id/login"
                 android:layout_width="wrap_content"
-                android:layout_height="16pt"/>
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:maxLines="1"/>
     </LinearLayout>
 
 
