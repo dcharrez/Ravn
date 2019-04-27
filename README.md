@@ -14,3 +14,13 @@ android {
         buildConfigField 'String', 'github_api_key', "\"XXX-GITHUB-API-KEYXX\""
     }
 ```
+
+## Screenshots
+
+<img src="https://github.com/dcharrez/Ravn/blob/master/README_imgs/rvn2.jpg" width="200"/>
+
+<img src="https://github.com/dcharrez/Ravn/blob/master/README_imgs/rvn3.jpg" width="200"/>
+
+## Architechture followed
+
+<img src="https://github.com/dcharrez/Ravn/blob/master/README_imgs/Architechture.png"/>
