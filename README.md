@@ -17,9 +17,9 @@ android {
 
 ## Screenshots
 
-<img src="https://github.com/dcharrez/Ravn/blob/master/README_imgs/rvn2.jpg" width="200"/>
-
-<img src="https://github.com/dcharrez/Ravn/blob/master/README_imgs/rvn3.jpg" width="200"/>
+Looking for a github User | Showing his/her repositories
+:-------------------------:|:-------------------------:
+![](https://github.com/dcharrez/Ravn/blob/master/README_imgs/rvn3.jpg)  |  ![](https://github.com/dcharrez/Ravn/blob/master/README_imgs/rvn2.jpg)
 
 ## Architechture followed
 
