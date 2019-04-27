@@ -6,6 +6,7 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:listDivider">@drawable/item_divider_gray</item>
     </style>
 
     <style name="CustomTitleText" parent="TextAppearance.AppCompat.Title">

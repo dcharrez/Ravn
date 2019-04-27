@@ -10,7 +10,7 @@
             android:layout_marginTop="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginBottom="16dp"
-            android:layout_marginRight="16dp"
+
             android:src="@mipmap/ic_launcher_round"
             android:layout_width="60dp"
             android:layout_height="60dp"
@@ -25,7 +25,7 @@
 
         <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="20pt"
                 android:orientation="horizontal">
 
             <TextView

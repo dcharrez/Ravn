@@ -6,13 +6,14 @@ import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
 import android.util.Log
 import com.apollographql.apollo.ApolloCall
-import com.apollographql.apollo.ApolloClient
 import com.apollographql.apollo.github.UsersQuery
 import com.apollographql.apollo.api.Response
 import com.apollographql.apollo.exception.ApolloException
 import com.google.gson.Gson
 import kotlinx.android.synthetic.main.activity_main.*
-import okhttp3.OkHttpClient
+import android.support.v7.widget.DividerItemDecoration
+
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -26,12 +27,13 @@ class MainActivity : AppCompatActivity() {
 
         github_users_recycler.layoutManager = LinearLayoutManager(this)
 
+        github_users_recycler.addItemDecoration(
+            DividerItemDecoration(context, DividerItemDecoration.VERTICAL)
+        )
 
-//        val client = setupApollo()
         val client = ApolloClientSetup().mApolloClient
 
         buttonSearch.setOnClickListener {
-            //            progressBar2.visibility = View.VISIBLE
             client.query(
                 UsersQuery
                     .builder()
@@ -40,12 +42,10 @@ class MainActivity : AppCompatActivity() {
             )
                 .enqueue(object : ApolloCall.Callback<UsersQuery.Data>() {
                     override fun onFailure(e: ApolloException) {
-//                        progressBar2.visibility = View.GONE
                     }
 
                     override fun onResponse(response: Response<UsersQuery.Data>) {
                         runOnUiThread {
-                            //                            progressBar2.visibility = View.GONE
 
                             val queryResult = response.data()?.search()?.edges()
 
