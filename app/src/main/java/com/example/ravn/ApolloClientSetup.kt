@@ -20,7 +20,7 @@ class ApolloClientSetup {
                 )
                 builder.addHeader(
                     "Authorization"
-                    , "Bearer TOKEN"
+                    , "Bearer "+BuildConfig.github_api_key
                 )
                 chain.proceed(builder.build())
             }
