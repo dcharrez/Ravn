@@ -32,6 +32,9 @@ class MainActivity : AppCompatActivity() {
         val client = ApolloClientSetup().mApolloClient
 
         buttonSearch.setOnClickListener {
+
+            userList.clear()
+
             client.query(
                 UsersQuery
                     .builder()

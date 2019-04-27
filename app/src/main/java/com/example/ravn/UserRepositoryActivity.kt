@@ -1,10 +1,12 @@
 package com.example.ravn
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.widget.DividerItemDecoration
 import android.support.v7.widget.LinearLayoutManager
 import android.util.Log
+import android.widget.TextView
 import com.apollographql.apollo.ApolloCall
 import com.apollographql.apollo.github_api.FindQuery
 import com.apollographql.apollo.api.Response
@@ -23,6 +25,8 @@ class UserRepositoryActivity : AppCompatActivity() {
         val username: String = intent.getStringExtra("user_name")
         val context = this
 
+        github_user_name.text = username
+
         repository_recycler.layoutManager = LinearLayoutManager(this)
 
         repository_recycler.addItemDecoration(
@@ -30,6 +34,11 @@ class UserRepositoryActivity : AppCompatActivity() {
         )
 
         val client = ApolloClientSetup().mApolloClient
+
+        button_back_users.setOnClickListener {
+            val intent = Intent(this@UserRepositoryActivity, MainActivity::class.java)
+            startActivity(intent)
+        }
 
 
         client.query(

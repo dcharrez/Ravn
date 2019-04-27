@@ -21,20 +21,25 @@
                     style="@style/ItemUserNameLocation"
                     android:id="@+id/repository_name"
                     android:layout_width="wrap_content"
-                    android:layout_height="20pt"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     android:layout_marginLeft="16dp"
                     android:layout_marginRight="5dp"
-                    android:text="test"/>
+                    android:text="test"
+                    android:textSize="20sp"
+                    android:maxLines="1"/>
 
             <TextView
                     style="@style/ItemRepositoryDescription"
                     android:id="@+id/repository_prcount"
-                    android:layout_width="wrap_content"
-                    android:layout_height="12.8pt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     android:layout_marginRight="16dp"
-                    android:text="test"/>
+                    android:gravity="right"
+                    android:textAlignment="gravity"
+                    android:textSize="12.8sp"
+                    android:maxLines="1"/>
 
         </LinearLayout>
 
@@ -43,8 +48,9 @@
                 android:id="@+id/repository_description"
                 android:layout_width="wrap_content"
                 android:layout_height="12.8pt"
+                android:textSize="12.8sp"
                 android:layout_marginLeft="16dp"
-                android:text="test"/>
+                android:maxLines="1"/>
     </LinearLayout>
 
 

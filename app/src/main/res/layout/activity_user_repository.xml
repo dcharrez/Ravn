@@ -19,13 +19,15 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-            <TextView
+
+            <Button
                     style="@style/buttonBackUsers"
                     android:id="@+id/button_back_users"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginTop="12dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="5dp"
                     android:drawableLeft="@drawable/ic_keyboard_arrow_left_black_24dp"
                     android:text="Users"/>
 

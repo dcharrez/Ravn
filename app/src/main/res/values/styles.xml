@@ -37,7 +37,7 @@
     </style>
 
     <style name="buttonBackUsers" parent="TextAppearance.AppCompat.Title">
-        <item name="android:textSize">12.8pt</item>
+        <!--<item name="android:textSize">12.8pt</item>-->
         <item name="android:textColor">@color/colorSKyBlue</item>
     </style>
 
