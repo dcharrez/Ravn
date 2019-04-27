@@ -1,6 +1,12 @@
 # Ravn
 Ravn GraphQL Code Challenge
 
+## Tools used
+
+1. Apollo GraphQl
+2. Kotlin
+3. Android Studio
+
 ## Setting your github-api-key
 
 1. (Optional) [How to get a github api key](https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line)
