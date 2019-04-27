@@ -22,7 +22,7 @@
     </style>
 
     <style name="ItemUserNameLocation" parent="TextAppearance.AppCompat.Title">
-        <!--<item name="android:textSize">20pt</item>-->
+        <item name="android:textSize">20dp</item>
         <item name="android:textColor">@color/colorItemText</item>
     </style>
 
@@ -32,7 +32,7 @@
     </style>
 
     <style name="ItemRepositoryDescription" parent="TextAppearance.AppCompat.Title">
-        <item name="android:textSize">12.8pt</item>
+        <!--<item name="android:textSize">12.8pt</item>-->
         <item name="android:textColor">@color/colorItemText</item>
     </style>
 

@@ -12,8 +12,8 @@ import java.util.*
 class RepositoryAdapter (val items : ArrayList<Repository>, val context: Context) : RecyclerView.Adapter<ViewHolder>() {
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.nameRepo.text = items[position].githubUserName
-        holder.descriptionRepo.text = items[position].description
+        holder.repositoryName.text = items[position].repositoryName
+        holder.descriptionRepo.text = items[position].repositoryDescription
         holder.prcount.text = ("PR Count: " + items[position].pullRequestCount.toString())
     }
 
@@ -28,7 +28,7 @@ class RepositoryAdapter (val items : ArrayList<Repository>, val context: Context
 
 
 class ViewHolder (view: View) : RecyclerView.ViewHolder(view) {
-    val nameRepo : TextView = view.repository_name
+    val repositoryName : TextView = view.repository_name
     val descriptionRepo : TextView = view.repository_description
     val prcount : TextView = view.repository_prcount
 }

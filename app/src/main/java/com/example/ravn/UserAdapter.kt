@@ -1,7 +1,7 @@
 package com.example.ravn
 
 import android.content.Context
-
+import android.graphics.Color
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
@@ -23,7 +23,7 @@ class UserAdapter(val items: ArrayList<User>, val context: Context, val clickLis
 
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, p1: Int): UserHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, position: Int): UserHolder {
         return UserHolder(LayoutInflater.from(context).inflate(R.layout.item_github_user, parent, false))
     }
 
@@ -31,6 +31,7 @@ class UserAdapter(val items: ArrayList<User>, val context: Context, val clickLis
         return items.size
     }
 }
+
 
 class UserHolder(view: View) : RecyclerView.ViewHolder(view) {
     fun bind(part: User, clickListener: (User) -> Unit) {
