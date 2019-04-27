@@ -65,10 +65,8 @@ class MainActivity : AppCompatActivity() {
     object HelperJSON {
         private var gson: Gson = Gson()
         fun getUser(jsonString: String): User {
-            Log.e("JSONHelper ", "Enter: " + jsonString)
             return gson.fromJson(jsonString, User::class.java)
         }
-
         fun toJsonString(simpleObject: Any?): String = gson.toJson(simpleObject)
     }
 
