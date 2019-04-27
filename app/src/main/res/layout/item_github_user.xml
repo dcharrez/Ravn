@@ -10,9 +10,10 @@
             android:layout_marginTop="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginBottom="16dp"
+
             android:src="@mipmap/ic_launcher_round"
-            android:layout_width="96dp"
-            android:layout_height="96dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             app:civ_border_width="0.1dp"
             app:civ_border_color="#FF000000"/>
 
@@ -24,22 +25,24 @@
 
         <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
             <TextView
                     style="@style/ItemUserNameLocation"
                     android:id="@+id/github_user_name"
-                    android:layout_width="129dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"/>
+                    android:layout_width="wrap_content"
+                    android:layout_height="20pt"
+                    android:layout_marginTop="16dp"
+                    android:maxLines="1"/>
 
             <TextView
                     style="@style/ItemUserNameLocation"
                     android:id="@+id/github_user_location"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"/>
+                    android:layout_height="20pt"
+                    android:layout_marginTop="16dp"
+                    android:maxLines="1"/>
 
         </LinearLayout>
 
@@ -47,7 +50,7 @@
                 style="@style/ItemUserLogin"
                 android:id="@+id/login"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="16pt"/>
     </LinearLayout>
 
 

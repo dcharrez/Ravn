@@ -23,6 +23,11 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    compileOptions {
+        targetCompatibility = "8"
+        sourceCompatibility = "8"
+    }
 }
 
 dependencies {
@@ -36,4 +41,13 @@ dependencies {
     implementation 'com.android.support:recyclerview-v7:28.0.0'
     implementation 'de.hdodenhof:circleimageview:3.0.0'
     implementation 'com.apollographql.apollo:apollo-runtime:1.0.1-SNAPSHOT'
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'com.squareup.okhttp3:okhttp:3.14.1'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+}
+
+apollo {
+    customTypeMapping = [
+            "URI": "java.lang.String"
+    ]
 }

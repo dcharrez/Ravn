@@ -5,7 +5,6 @@ query FindQuery($user_name:String!){
       edges {
         node {
           name
-          url
           description
           pullRequests{
             totalCount

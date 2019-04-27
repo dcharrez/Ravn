@@ -6,6 +6,7 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:listDivider">@drawable/item_divider_gray</item>
     </style>
 
     <style name="CustomTitleText" parent="TextAppearance.AppCompat.Title">
@@ -21,17 +22,17 @@
     </style>
 
     <style name="ItemUserNameLocation" parent="TextAppearance.AppCompat.Title">
-        <item name="android:textSize">20pt</item>
+        <item name="android:textSize">20dp</item>
         <item name="android:textColor">@color/colorItemText</item>
     </style>
 
     <style name="ItemUserLogin" parent="TextAppearance.AppCompat.Title">
-        <item name="android:textSize">16pt</item>
+        <!--<item name="android:textSize">16pt</item>-->
         <item name="android:textColor">@color/colorItemText</item>
     </style>
 
     <style name="ItemRepositoryDescription" parent="TextAppearance.AppCompat.Title">
-        <item name="android:textSize">12.8pt</item>
+        <!--<item name="android:textSize">12.8pt</item>-->
         <item name="android:textColor">@color/colorItemText</item>
     </style>
 
